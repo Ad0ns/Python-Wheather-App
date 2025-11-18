@@ -52,6 +52,7 @@ hourly_rain = hourly.Variables(1).ValuesAsNumpy().round(2)
 hourly_wind_speed_10m = hourly.Variables(2).ValuesAsNumpy().round(2)
 hourly_wind_direction_10m = hourly.Variables(3).ValuesAsNumpy().round(2)
 
+
 hourly_data = {
     "date": pd.date_range(
         start=pd.to_datetime(hourly.Time(), unit="s", utc=True),
